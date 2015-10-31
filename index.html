@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Tic Tac Toe</title>
 
     <!-- Bootstrap -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,9 +16,66 @@
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+      .placeholder {
+        float: left;
+        display: inline-block;
+        width: 30%;
+        height: 30%; 
+        margin-right: 3%;
+        margin-top: 3%;
+        border: 2px solid #ccc;
+      }
+      .gameboard {
+        margin: 20px auto;
+        margin-top: 70px;
+        width: 30em;
+        height: 30em;
+      }
+      .scorecard {
+        margin: 10px auto;
+        text-align: center;
+      }
+      .player-name {
+        font-size: 2em;
+        padding: 0 2px;
+      }
+      .player-score {
+        font-size: 2.3em;
+        padding: 0 2px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container"> 
+        <ul class="nav navbar-nav">
+          <li><a href="#">new game</a></li>
+          <li><a href="#">mode</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="gameboard">
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div> <!-- gameboard end -->
+
+      <div class="scorecard">
+        <span class="player-name">You</span>
+        <span class="player-score">1</span>
+        <span class="player-score">:</span>
+        <span class="player-score">1</span>
+        <span class="player-name">CPU</span>
+      </div> <!-- scorecard end -->
+    </div> <!-- container end -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
